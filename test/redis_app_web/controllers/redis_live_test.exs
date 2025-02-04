@@ -50,14 +50,13 @@ defmodule RedisAppWeb.RedisLiveTest do
   end
 
   test "deletes a key", %{conn: conn} do
-    # Pre-set a key-value pair.
+
     RedisApp.RedisService.set_value("delete_me", "to_delete")
     {:ok, view, _html} = live(conn, "/redis")
 
     html = render(view)
     assert html =~ "delete_me"
 
-    # Click the delete button; pass the key in phx-value.
     view
     |> element(~s(button[phx-value-key="delete_me"]), "Delete")
     |> render_click(%{"key" => "delete_me"})
@@ -67,14 +66,12 @@ defmodule RedisAppWeb.RedisLiveTest do
   end
 
   test "edits a key", %{conn: conn} do
-    # Pre-set a key-value pair.
     RedisApp.RedisService.set_value("edit_me", "original_value")
     {:ok, view, _html} = live(conn, "/redis")
 
     html = render(view)
     assert html =~ "edit_me"
-
-    # Click the edit button to open the modal with current data.
+    
     view
     |> element(~s(button[phx-click="edit_key"][phx-value-key="edit_me"].bg-green-500), "Edit")
     |> render_click()
