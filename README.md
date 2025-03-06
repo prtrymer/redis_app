@@ -14,12 +14,12 @@ Follow these steps to set up and run RedisApp:
 
 1️⃣ Clone the Repository
 
-git clone https://github.com/your-repo/redisapp.git
-cd redisapp
+git clone [https://github.com/prtrymer/redis_app.git]
+cd redis_app
 
 2️⃣ Start Dependencies
 
-docker compose up -d  # Runs the necessary database containers in the background
+sudo docker compose up -d  # Runs the necessary database containers in the background
 
 3️⃣ Install Dependencies
 
