@@ -1,18 +1,50 @@
-# RedisApp
+🚀 RedisApp
 
-To start your Phoenix server:
+A lightweight and user-friendly application for managing key-value pairs with real-time updates, powered by GenServer.
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+✨ Features
+	•	🔍 View All Data – Display all stored key-value pairs.
+	•	✏️ CRUD Operations – Create, update, and delete pairs effortlessly.
+	•	⚡ Real-Time Updates – Changes appear instantly.
+	•	🛠️ Built with GenServer – Ensures high performance and concurrency.
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+🛠️ Getting Started
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+Follow these steps to set up and run RedisApp:
 
-## Learn more
+1️⃣ Clone the Repository
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+git clone https://github.com/your-repo/redisapp.git
+cd redisapp
+
+2️⃣ Start Dependencies
+
+docker compose up -d  # Runs the necessary database containers in the background
+
+3️⃣ Install Dependencies
+
+mix setup  # Installs and sets up Elixir dependencies
+
+4️⃣ Start the Application
+
+Run the Phoenix server:
+
+mix phx.server
+
+Or start inside IEx:
+
+iex -S mix phx.server
+
+5️⃣ Open in Browser
+
+Visit: http://localhost:4000
+
+6️⃣ Run Tests
+
+mix test
+
+🖼️ Preview
+
+https://github.com/user-attachments/assets/314566d6-9053-4490-bbd6-462dcfab7975
+
+
